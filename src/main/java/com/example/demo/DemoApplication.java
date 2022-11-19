@@ -1,20 +1,34 @@
-package com.example.demo;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package crmpsico;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import java.util.Scanner;
 
-@SpringBootApplication
-@RestController
-public class DemoApplication {
+/**
+ *
+ * @author luanv
+ */
+public class Crmpsico {
+    
+    
+    public static String scanner(){
+        Scanner scan = new Scanner(System.in);
+        String digite = scan.next();
+        
+        return digite;
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
-
-	@RequestMapping("/")
-	String sayHello() {
-		return "Hello World!";
-	}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Bem vindo ao CRM");
+        System.out.println("Digite seu nome: ");
+        scanner();
+         
+    }
+    
 }
