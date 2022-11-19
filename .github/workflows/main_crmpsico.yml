@@ -27,7 +27,7 @@ public class Crmpsico {
         // TODO code application logic here
         System.out.println("Bem vindo ao CRM");
         System.out.println("Digite seu nome: ");
-        scanner();
+        System.out.println(scanner());
          
     }
     
